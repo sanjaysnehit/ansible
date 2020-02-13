@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh 'echo "my name is Pranaya"'
-        sh '"ls"'
+        print("my name is Pranaya")
       }
     }
     stage('dev') {
@@ -12,21 +11,21 @@ pipeline {
         stage('dev') {
           agent any
           steps {
-            sh 'echo "Test"'
-            sh 'ls'
+            print("Test")
+          
           }
         }
         stage('sandbox') {
           agent any
           steps {
-            sh 'echo "testing parallel stage"'
+            print("testing parallel stage")
           }
         }
       }
     }
     stage('123') {
       steps {
-        sh 'echo "test test"'
+        print("test test")
       }
     }
   }
