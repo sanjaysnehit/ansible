@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        printf("my name is Pranaya");
+        printf("my name is Pranaya")
       }
     }
     stage('dev') {
