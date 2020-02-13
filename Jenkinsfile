@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        print("my name is Pranaya")
+        printf("my name is Pranaya");
       }
     }
     stage('dev') {
@@ -11,21 +11,21 @@ pipeline {
         stage('dev') {
           agent any
           steps {
-            print("Test")
+            printf("Test")
           
           }
         }
         stage('sandbox') {
           agent any
           steps {
-            print("testing parallel stage")
+            printf("testing parallel stage")
           }
         }
       }
     }
     stage('123') {
       steps {
-        print("test test")
+        printf("test test")
       }
     }
   }
